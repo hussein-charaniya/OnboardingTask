@@ -11,11 +11,11 @@ namespace QA_Mars_OnboardingTask.Test
     [TestFixture]
     internal class Profile_Tests : CommonDriver
     {
-        [Test]
-        static void Main(string[] args)
+        [Test, Order(1)]
+        //static void Main(string[] args)
+        //{
+        public void CreateProfile_Test()
         {
-            //public void CreateProfile_Test()
-            //{
             //// Open chrome browser
             IWebDriver driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
@@ -29,12 +29,9 @@ namespace QA_Mars_OnboardingTask.Test
 
             HomePage homePageObj = new HomePage();
             homePageObj.GoToHomePage(driver);
-
-           
-            
         }
 
-        [Test]
+        [Test, Order(2)]
         public void AddSkill()
         {
             // Profile skill page object initialization and definition.
@@ -42,15 +39,15 @@ namespace QA_Mars_OnboardingTask.Test
             profileSkillPageObj.AddSkill(driver);
 
         }
-        [Test]
-            public void EditSkill()
+        [Test, Order(3)]
+        public void EditSkill()
         {
             //Edit skill
             ProfileSkillPage profileSkillPageObj = new ProfileSkillPage();
             profileSkillPageObj.EditSkill(driver);
 
         }
-        [Test]
+        [Test, Order(4)]
         public void DeleteSkill()
         {
             ProfileSkillPage profileSkillPageObj = new ProfileSkillPage();
@@ -58,4 +55,4 @@ namespace QA_Mars_OnboardingTask.Test
             profileSkillPageObj.DeleteSkill(driver);
         }
     }
-    }
+}

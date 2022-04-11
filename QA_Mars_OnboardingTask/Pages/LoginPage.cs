@@ -14,7 +14,6 @@ namespace QA_Mars_OnboardingTask.Pages
     {
         public static void LoginSteps(IWebDriver driver)
         {
- 
             // launch Local host portal
             driver.Navigate().GoToUrl("http://localhost:5000");
 

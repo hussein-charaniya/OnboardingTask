@@ -59,10 +59,10 @@ namespace QA_Mars_OnboardingTask.Pages
             //IWebElement addLanguage = driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[2]/div/div[2]/div/div/div[1]/input"));
             //addLanguage.Clear();
 
-            Thread.Sleep(2000);
+            Thread.Sleep(5000);
             //Select conversational option from choose language dropdown menu.
-            IWebElement chooseLanguageLevelDropdown = driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[2]/div/div[2]/div/div/div[2]/select"));
-            chooseLanguageLevelDropdown.Click();
+            //IWebElement chooseLanguageLevelDropdown = driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[2]/div/div[2]/div/div/div[2]/select"));
+            //chooseLanguageLevelDropdown.Click();
 
             IWebElement editconversationalOption = driver.FindElement(By.XPath("//*[@id='account-profile-section']/div/section[2]/div/div/div/div[3]/form/div[2]/div/div[2]/div/table/tbody[1]/tr/td/div/div[2]/select/option[4]"));
             editconversationalOption.Click();
